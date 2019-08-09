@@ -1,0 +1,21 @@
+{
+  "name": "testelectron5",
+  "description": "Electron 5 headless app",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "DISPLAY=:99 node test.js"
+  },
+  "homepage": "http://www.electronjs.com",
+  "main": "test.js",
+  "author": "TESTie Konink",
+  "dependencies": {
+    "async": "^2.6.2",
+    "electron": "5.0.8"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "^8.9.4",
+    "npm": "4.6.1"
+  },
+  "private": true
+}

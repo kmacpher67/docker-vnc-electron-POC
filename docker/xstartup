@@ -1,0 +1,6 @@
+#!/bin/bash
+### Copy this the $home or ~/.vnc/xstartup
+### see docs https://help.ubuntu.com/community/VNC/Servers#tightvncserver
+echo ".vnc/xstartup running startxfce4" 
+xrdb $HOME/.Xresources
+startxfce4 &
