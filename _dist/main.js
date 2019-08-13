@@ -15,7 +15,7 @@ setTimeout(function(){
       var d = new Date().getTime(); //'+d.toString()+'
       // and load the index.html of the app.
       //win.loadFile('index.html')
-      win.loadURL('https://www.google.com');
+      win.loadURL('https://kenmacpherson.com');
 
       win.webContents.on('did-finish-load', () => {
             // Use default printing options
@@ -25,11 +25,11 @@ setTimeout(function(){
               fs.writeFile('print'+d.toString()+'.pdf', data, (error) => {
                 if (error) throw error
                 console.log('Write PDF successfully.');
-                setTimeout(function(){ app.quit(); },500);
+                setTimeout(function(){ app.quit(); },3500);
               })
             });
       })
     }
-  }, 100);
+  }, 250);
   
 

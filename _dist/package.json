@@ -3,7 +3,7 @@
   "description": "Electron 5 headless app",
   "version": "0.0.1",
   "scripts": {
-    "start": "DISPLAY=:99 node test.js"
+    "start": "DISPLAY=:3 node test.js"
   },
   "homepage": "http://www.electronjs.com",
   "main": "test.js",

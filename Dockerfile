@@ -49,7 +49,7 @@ RUN apt-get install -y nodejs npm
 # fucking debian installs `node` as `nodejs`
 RUN update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
 # Install electron 
-RUN npm install electron -g
+RUN npm install electron@6.0.2 -g
 # Install & setup of vnc server 
 COPY ./vnc_startup.sh /app
 RUN /bin/chmod +x /app/vnc_startup.sh
@@ -69,6 +69,8 @@ RUN touch ~/.Xauthority
 RUN chown -R electron:electron "/home/electron"
 ADD ./_dist /app
 RUN chown -R electron:electron "/app"
+RUN chown root:root /usr/local/lib/node_modules/electron/dist/chrome-sandbox
+RUN chmod 4755 /usr/local/lib/node_modules/electron/dist/chrome-sandbox
 RUN mkdir -p /var/log/supervisord && chown -R electron:electron "/var/log/supervisord"
 RUN /bin/rm -rf /var/lib/apt/lists/*
 # USER electron
