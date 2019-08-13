@@ -13,9 +13,5 @@
     "electron": "5.0.8"
   },
   "devDependencies": {},
-  "engines": {
-    "node": "^8.9.4",
-    "npm": "4.6.1"
-  },
   "private": true
 }
