@@ -18,6 +18,8 @@ var exec = require('child_process').exec;
     child = proc.spawn(
         electron,
         ['main.js', filename],
+            //JSON.stringify(config)],  THIS WILL SEND THE CONFIG ON START.  BUT THERE IS A SIZE LIMIT AND THIS FAILS
+            //WITH LARGE DATA SETS
             { stdio: [null, null, null, 'ipc']}
      );
 
