@@ -68,6 +68,8 @@ ENV VNC_RESOLUTION=1280x1296
 RUN touch ~/.Xauthority
 RUN chown -R electron:electron "/home/electron"
 ADD ./_dist /app
+COPY ./start.sh /app
+RUN chmod +x /app/start.sh
 RUN chown -R electron:electron "/app"
 RUN chown root:root /usr/local/lib/node_modules/electron/dist/chrome-sandbox
 RUN chmod 4755 /usr/local/lib/node_modules/electron/dist/chrome-sandbox
