@@ -10,7 +10,7 @@
   "author": "TESTie Konink",
   "dependencies": {
     "async": "^2.6.2",
-    "electron": "5.0.8"
+    "electron": "7.2.4"
   },
   "devDependencies": {},
   "private": true
