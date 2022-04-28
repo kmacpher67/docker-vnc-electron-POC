@@ -9,7 +9,7 @@
   "main": "test.js",
   "author": "TESTie Konink",
   "dependencies": {
-    "async": "^2.6.2",
+    "async": "^2.6.4",
     "electron": "5.0.8"
   },
   "devDependencies": {},
